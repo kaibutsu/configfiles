@@ -1,0 +1,30 @@
+# Ignore everything by default.
+/*
+
+# Git aliases, identification info
+#!.gitconfig
+# The gitignore of this repository itself (!)
+!.gitignore
+
+# .config dir (include first, then exlude again...
+# ...not sure if neccessary...)
+!/bashrc
+!/Xresources
+!/i3
+/i3/scripts/__pycache__
+!/nvim
+/nvim/plugged
+/nvim/README.md
+/nvim/autoload/plug.vim.old
+!/polybar
+!/ranger
+/ranger/*
+!/ranger/rc.conf
+!/ranger/rifle.conf
+!/ranger/scope.sh
+!/compton.conf
+!/user-dirs.dirs
+!/redshift.conf
+!/git
+/git/*
+!/git/ignore

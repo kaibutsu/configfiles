@@ -1,0 +1,193 @@
+;=====================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;=====================================================
+
+[colors]
+background = ${xrdb:color8:#222}
+foreground = ${xrdb:color0:#aaa}
+focus = ${xrdb:color1:#833}
+accent1 = ${xrdb:color2:#833}
+accent2 = ${xrdb:color3:#833}
+accent3 = ${xrdb:color4:#833}
+accent4 = ${xrdb:color6:#833}
+accent5 = ${xrdb:color9:#833}
+accent6 = ${xrdb:color10:#833}
+accent7 = ${xrdb:color11:#833}
+accent8 = ${xrdb:color12:#833}
+accent9 = ${xrdb:color13:#833}
+accent10 = ${xrdb:color14:#833}
+alert = ${xrdb:color5:#a22}
+balanced = ${xrdb:color7:#888}
+alt_balanced = ${xrdb:color15:#888}
+
+[settings]
+screenchange-reload = true
+
+;[global/wm]
+;margin-top = 5
+;margin-bottom = 5
+
+[bar/base]
+locale = de_DE.utf8
+width = 100%
+height = 24
+radius = 0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 4
+line-color = ${colors.balanced}
+
+padding-left = 1
+padding-right = 1
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = "Source Code Pro:size=9;2"
+font-1 = "FontAwesome:size=10;2"
+
+bottom = true
+
+override-redirect = false
+;wm-restack = i3
+
+[bar/main]
+inherit = bar/base
+monitor = HDMI-0
+monitor-strict = true
+
+modules-left = i3
+modules-center = filesystem memory cpu eth
+modules-right = ldate volume
+
+[bar/secondary]
+inherit = bar/base
+monitor = DisplayPort-0
+monitor-strict = true
+
+modules-left = i3
+modules-center = ldate
+modules-right =
+
+tray-position = right
+tray-detached = false
+
+[module/i3]
+type = internal/i3
+strip-wsnumbers = false
+format = <label-state> <label-mode>
+index-sort = false
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+pin-workspaces = true
+
+label-mode-padding = 2
+label-mode-foreground = ${colors.foreground}
+label-mode-background = ${colors.background}
+
+; focused = Active workspace on focused monitor
+label-focused = %name%
+label-focused-background = ${colors.background}
+label-focused-underline = ${colors.focus}
+label-focused-padding = 2
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %name%
+label-unfocused-padding = 2
+
+; visible = Active workspace on unfocused monitor
+label-visible = %name%
+label-visible-background = ${self.label-focused-background}
+label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.label-focused-padding}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %name%
+label-urgent-underline = ${colors.alert}
+label-urgent-padding = 2
+
+[module/date]
+type = internal/date
+interval = 1
+
+format-prefix =
+format-prefix-foreground = ${colors.balanced}
+#format-underline = ${colors.accent4}
+
+label = %date% %time%
+
+[module/sdate]
+inherit = module/date
+time = %H:%M:%S
+date = "%Y-%m-%d"
+
+[module/ldate]
+inherit = module/date
+date = %A, %d. %B
+time = %H:%M
+
+[module/filesystem]
+type = internal/fs
+interval = 30
+
+mount-0 = /
+#mount-1 = /home
+label-mounted = " %mountpoint%: %percentage_used%% "
+label-unmounted = " %mountpoint% not mounted "
+label-unmounted-foreground = ${colors.alert}
+format-mounted-underline = ${colors.accent2}
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = "  "
+#format-prefix-foreground = ${colors.balanced}
+format-underline = ${colors.accent3}
+label = "%gb_used%/%gb_total% "
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "  "
+#format-prefix-foreground = ${colors.balanced}
+format-underline = ${colors.accent4}
+label = "%percentage-core1:2%% |%percentage-core2:2%% |%percentage-core3:2%% |%percentage-core4:2%% "
+
+[module/eth]
+type = internal/network
+interface = enp4s0
+interval = 10.0
+
+format-connected-underline = ${colors.accent5}
+format-connected-prefix = "  "
+#format-connected-prefix-foreground = ${colors.balanced}
+label-connected = "%local_ip% "
+
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${colors.alert}
+label-disconnected = "  %ifname% disconnected "
+label-disconnected-foreground = ${colors.balanced}
+
+[module/volume]
+type = internal/volume
+
+format-volume-prefix = "  "
+#format-volume-prefix-foreground = ${colors.balanced}
+format-volume = <label-volume>
+label-volume = "%percentage%% "
+label-volume-foreground = ${root.foreground}
+format-volume-underline = ${colors.accent6}
+
+format-muted-foreground = ${colors.balanced}
+label-muted = muted
+
+; vim:ft=dosini
