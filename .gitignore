@@ -10,6 +10,7 @@
 # ...not sure if neccessary...)
 !/bashrc
 !/Xresources
+!/fontconfig
 !/i3
 /i3/scripts/__pycache__
 !/nvim
