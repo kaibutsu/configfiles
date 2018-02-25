@@ -196,7 +196,7 @@ exec_always --no-startup-id "nitrogen --restore"
 # start polybar(s)
 exec_always --no-startup-id "$HOME/.config/polybar/launch.sh"
 # file synchronisation utility
-exec --no-startup-id "synology-cloud-station-drive autostart"
+exec --no-startup-id "synology-drive"
 # policy kit
 exec --no-startup-id "lxpolkit"
 # disk mounting utility
