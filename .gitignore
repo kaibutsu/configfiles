@@ -26,6 +26,9 @@
 !/compton.conf
 !/user-dirs.dirs
 !/redshift.conf
+!/termite
+/termite/*
+!/termite/config
 !/git
 /git/*
 !/git/ignore

@@ -15,15 +15,15 @@ set $add_out DisplayPort-0
 
 # Color definitions
 # Load colors from xresources
-set_from_resource $focused_fg		foreground
+set_from_resource $focused_fg		color0
 set_from_resource $unfocused_fg		color7
 set_from_resource $urgent_fg		color5
 set_from_resource $focused_bg		color1
-set_from_resource $unfocused_bg		background
-set_from_resource $urgent_bg		background
+set_from_resource $unfocused_bg		color8
+set_from_resource $urgent_bg		color8
 set_from_resource $focused_brd		color1
-set_from_resource $unfocused_brd	background
-set_from_resource $urgent_brd		background
+set_from_resource $unfocused_brd	color8
+set_from_resource $urgent_brd		color8
 
 # class			border  	backgr.		text		indicator	child_border
 client.focused		$focused_bg	$focused_bg	$focused_fg	$focused_bg	$focused_brd
@@ -41,7 +41,7 @@ hide_edge_borders none
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id bash -c "TERMINAL=sakura i3-sensible-terminal"
+bindsym $mod+Return exec --no-startup-id bash -c "TERMINAL=termite i3-sensible-terminal"
 #bindsym $mod+Return exec i3-sensible-terminal
 
 # start a browser
