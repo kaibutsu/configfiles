@@ -61,7 +61,7 @@ override-redirect = false
 
 [bar/main]
 inherit = bar/base
-monitor = HDMI-0
+monitor = DisplayPort-0
 monitor-strict = true
 
 modules-left = i3
@@ -70,7 +70,7 @@ modules-right = ldate volume
 
 [bar/secondary]
 inherit = bar/base
-monitor = DisplayPort-0
+monitor = HDMI-0
 monitor-strict = true
 
 modules-left = i3

@@ -10,8 +10,8 @@ set $mod Mod4
 font pango: Source Code Pro 9
 
 # Monitor definitions
-set $main_out HDMI-0
-set $add_out DisplayPort-0
+set $main_out DisplayPort-0
+set $add_out HDMI-0
 
 # Color definitions
 # Load colors from xresources
@@ -92,10 +92,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-#bindsym $mod+Shift+space floating toggle
+bindsym $mod+shift+space floating toggle
 
 # change focus between tiling / floating windows
-#bindsym $mod+space focus mode_toggle
+bindsym $mod+Tab focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
