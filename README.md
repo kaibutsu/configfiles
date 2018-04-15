@@ -3,4 +3,7 @@ My Linux ~/.config/ files
 
 This is a repo to keep my .config files.
 
-To use ~/.Xresources and ~/.bashrc symlink both files to ~/.config/Xresources and ~/.config/bashrc respectively...
+To use the following files symlink them to .config/ (without the leading '.'):
+    ~/.Xresources
+    ~/.bashrc
+    ~/.xprofile

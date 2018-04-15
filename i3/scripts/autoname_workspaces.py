@@ -64,6 +64,7 @@ WINDOW_ICONS = {
     'sakura': fa.icons['terminal'],
     'subl': fa.icons['code'],
     'subl3': fa.icons['code'],
+    'termite': fa.icons['terminal'],
     'thunar': fa.icons['folder-open-o'],
     'urxvt': fa.icons['terminal'],
     'xfce4-terminal': fa.icons['terminal'],
