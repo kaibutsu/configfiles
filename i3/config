@@ -45,7 +45,7 @@ bindsym $mod+Return exec --no-startup-id bash -c "TERMINAL=termite i3-sensible-t
 #bindsym $mod+Return exec i3-sensible-terminal
 
 # start a browser
-bindsym $mod+Shift+Return exec "chromium"
+bindsym $mod+Shift+Return exec "firefox"
 
 # kill focused window
 bindsym $mod+Shift+q kill
