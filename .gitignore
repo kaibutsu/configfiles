@@ -10,6 +10,7 @@
 # ...not sure if neccessary...)
 !/bashrc
 !/Xresources
+!/filelist
 !/fontconfig
 !/i3
 /i3/scripts/__pycache__
