@@ -58,6 +58,7 @@ WINDOW_ICONS = {
     'kicad': fa.icons['microchip'],
     'libreoffice': fa.icons['pencil-square'],
     'lxterminal': fa.icons['terminal'],
+    'mail': fa.icons['envelope-o'],
     'mupdf': fa.icons['book'],
     'spotify': fa.icons['music'],  # could also use the 'spotify' icon
     'steam': fa.icons['steam'],
@@ -66,6 +67,7 @@ WINDOW_ICONS = {
     'subl3': fa.icons['code'],
     'termite': fa.icons['terminal'],
     'thunar': fa.icons['folder-open-o'],
+    'thunderbird': fa.icons['envelope-o'],
     'urxvt': fa.icons['terminal'],
     'xfce4-terminal': fa.icons['terminal'],
 }

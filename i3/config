@@ -134,7 +134,7 @@ bindsym $mod+Shift+bracketleft move workspace to output left
 bindsym $mod+Shift+bracketright move workspace to output right
 
 # Set floating for specific clients
-for_window [class="Gimp"] floating enable
+#for_window [class="Gimp"] floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
