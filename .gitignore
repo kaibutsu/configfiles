@@ -9,6 +9,7 @@
 # .config dir (include first, then exlude again...
 # ...not sure if neccessary...)
 !/bashrc
+!/bash_profile
 !/Xresources
 !/filelist
 !/fontconfig
@@ -18,6 +19,7 @@
 /nvim/plugged
 /nvim/README.md
 /nvim/autoload/plug.vim.old
+!/openbox
 !/polybar
 !/ranger
 /ranger/*
