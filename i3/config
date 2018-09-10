@@ -11,7 +11,7 @@ font pango: Fira Code Bold 9
 
 # Monitor definitions
 set $main_out HDMI-0
-set $add_out DisplayPort-0
+set $add_out DP-1
 
 # Color definitions
 # Load colors from xresources

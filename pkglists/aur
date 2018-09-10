@@ -1,0 +1,9 @@
+cower
+polybar-git
+    #needs
+        #sudo pacman -S jsoncpp
+        #sudo pip install i3ipc
+        #sudo pip install fontawesome
+rstudio-desktop-bin
+synology-drive
+zotero

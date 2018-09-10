@@ -20,6 +20,7 @@
 /nvim/README.md
 /nvim/autoload/plug.vim.old
 !/openbox
+!/pkglists
 !/polybar
 !/ranger
 /ranger/*
