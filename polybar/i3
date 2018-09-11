@@ -8,20 +8,19 @@
 ;=====================================================
 
 [colors]
-background = ${xrdb:color8:#222}
-foreground = ${xrdb:color0:#aaa}
-focus = ${xrdb:color1:#833}
-accent1 = ${xrdb:color2:#833}
-accent2 = ${xrdb:color3:#833}
-accent3 = ${xrdb:color4:#833}
+background = ${xrdb:foreground:#222}
+foreground = ${xrdb:background:#aaa}
+focus = ${xrdb:color2:#833}
+accent1 = ${xrdb:color3:#833}
+accent2 = ${xrdb:color4:#833}
+accent3 = ${xrdb:color5:#833}
 accent4 = ${xrdb:color6:#833}
-accent5 = ${xrdb:color9:#833}
-accent6 = ${xrdb:color10:#833}
-accent7 = ${xrdb:color11:#833}
-accent8 = ${xrdb:color12:#833}
-accent9 = ${xrdb:color13:#833}
-accent10 = ${xrdb:color14:#833}
-alert = ${xrdb:color5:#a22}
+accent5 = ${xrdb:color10:#833}
+accent6 = ${xrdb:color11:#833}
+accent7 = ${xrdb:color12:#833}
+accent8 = ${xrdb:color13:#833}
+accent9 = ${xrdb:color14:#833}
+alert = ${xrdb:color1:#a22}
 balanced = ${xrdb:color7:#888}
 alt_balanced = ${xrdb:color15:#888}
 
@@ -121,7 +120,7 @@ interval = 1
 
 format-prefix =
 format-prefix-foreground = ${colors.balanced}
-#format-underline = ${colors.accent4}
+format-underline = ${colors.accent7}
 
 label = %date% %time%
 
@@ -164,7 +163,7 @@ label = "%percentage-core1:2%% |%percentage-core2:2%% |%percentage-core3:2%% |%p
 
 [module/eth]
 type = internal/network
-interface = enp4s0
+interface = enp3s0u1
 interval = 10.0
 
 format-connected-underline = ${colors.accent5}

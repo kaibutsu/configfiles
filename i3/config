@@ -18,10 +18,10 @@ set $add_out DP-1
 set_from_resource $focused_fg		color0
 set_from_resource $unfocused_fg		color7
 set_from_resource $urgent_fg		color5
-set_from_resource $focused_bg		color1
+set_from_resource $focused_bg		color2
 set_from_resource $unfocused_bg		color8
 set_from_resource $urgent_bg		color8
-set_from_resource $focused_brd		color1
+set_from_resource $focused_brd		color2
 set_from_resource $unfocused_brd	color8
 set_from_resource $urgent_brd		color8
 
