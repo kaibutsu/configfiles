@@ -22,6 +22,7 @@ lxappearance-gtk3
 lxsession-gtk3
 materia-gtk-theme
 nitrogen
+noto-fonts
 numlockx
 papirus-icon-theme
 pavucontrol
@@ -37,6 +38,8 @@ ttf-font-awesome
 ttf-freefont
 ttf-liberation
 ttf-linux-libertine
+ttf-roboto
+ttf-ubuntu-font-family
 udiskie
 xarchiver
 xautolock

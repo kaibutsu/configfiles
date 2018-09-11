@@ -4,68 +4,68 @@ call plug#begin('~/.config/nvim/plugged')
     " Code completion
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
-	" Auto comment
-	Plug 'tomtom/tcomment_vim'
+    " Auto comment
+    Plug 'tomtom/tcomment_vim'
 
-	" Auto Formatting
-	Plug 'sbdchd/neoformat'
+    " Auto Formatting
+    Plug 'sbdchd/neoformat'
 
-	" NERDTree file tree popup
+    " NERDTree file tree popup
     Plug 'scrooloose/nerdtree'
 
-	" Nice little icons
-	Plug 'ryanoasis/vim-devicons'
+    " Nice little icons
+    Plug 'ryanoasis/vim-devicons'
 
-	" ctrl-p is a fuzzy file finder.
+    " ctrl-p is a fuzzy file finder.
     Plug 'kien/ctrlp.vim'
 
-	" Surround stuff
+    " Surround stuff
     Plug 'tpope/vim-surround'
 
-	" Easymotion
-	Plug 'easymotion/vim-easymotion'
+    " Easymotion
+    Plug 'easymotion/vim-easymotion'
 
-	" airline
+    " airline
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
-	" Some colorschemes
+    " Some colorschemes
     Plug 'altercation/vim-colors-solarized'
-	Plug 'rhysd/vim-color-spring-night'
+    Plug 'rhysd/vim-color-spring-night'
+    Plug 'noahfrederick/vim-noctu'
 
-	" Clean and fix trailing whitespaces
+    " Clean and fix trailing whitespaces
     Plug 'bronson/vim-trailing-whitespace'
 
-	" Color highlighting
-	Plug 'ap/vim-css-color'
+    " Color highlighting
+    Plug 'ap/vim-css-color'
 
-	" Coding languages support
-	Plug 'sheerun/vim-polyglot'
+    " Coding languages support
+    Plug 'sheerun/vim-polyglot'
     Plug 'mattn/emmet-vim'
 
-	" Syntax checking
-	Plug 'neomake/neomake'
+    " Syntax checking
+    Plug 'neomake/neomake'
 
-	" Git integration
-	Plug 'tpope/vim-fugitive'
-	Plug 'airblade/vim-gitgutter'
-	Plug 'Xuyuanp/nerdtree-git-plugin'
+    " Git integration
+    Plug 'tpope/vim-fugitive'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
 
-	" Unite and SilverSurfer for project-wide search {
-		"   ------------- VERY IMPORTANT ------------
-		"   you have to go to .vim/plugin/vimproc.vim and do a ./make
-		"   -----------------------------------------
-		Plug 'Shougo/vimproc.vim'
-		Plug 'Shougo/unite.vim'
-		Plug 'rking/ag.vim'
-	" }
+    " Unite and SilverSurfer for project-wide search
+    "------------- VERY IMPORTANT ------------
+    " you have to go to .vim/plugin/vimproc.vim
+    " and do a ./make
+    "-----------------------------------------
+    Plug 'Shougo/vimproc.vim'
+    Plug 'Shougo/unite.vim'
+    Plug 'rking/ag.vim'
 
     " Alignment
     Plug 'junegunn/vim-easy-align'
 
     " LaTex support
     Plug 'donRaphaco/neotex', { 'for': 'tex' }
- " }
 call plug#end()
 
 " General {
@@ -169,7 +169,8 @@ call plug#end()
     syntax enable
     set background=dark
     "colorscheme solarized
-    colorscheme spring-night
+    "colorscheme spring-night
+    "colorscheme noctu
 
     " Also highlight all tabs and trailing whitespace characters.
     highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
@@ -243,8 +244,7 @@ call plug#end()
 
 	" Airline {
         let g:airline_powerline_fonts = 1
-        let g:airline_solarized_bg='dark'
-        let g:airline_theme = 'spring_night'
+"        let g:airline_theme = 'spring_night'
     " }
 
 	" Neoformat {

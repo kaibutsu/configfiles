@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This script takes a screenshot and pixellates it, then uses it as the i3lock
-# background.  It was borrowed from here:
+# background. Depends on scrot and i3lock It was borrowed from here:
 # https://faq.i3wm.org/question/83/how-to-run-i3lock-after-computer-inactivity.1.html
 
 set -e

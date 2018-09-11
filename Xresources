@@ -1,50 +1,44 @@
-! special
-*.foreground:   #515151
-*.background:   #fdfdfd
-*.cursorColor:  #515151
-
-! black
-*.color0:       #515151
-*.color8:       #fdfdfd
-
-! red
-*.color1:       #01a8b9
-*.color9:       #8ad6d6
-
-! green
-*.color2:       #49c5cd
-*.color10:      #daeff0
-
-! yellow
-*.color3:       #a8ba04
-*.color11:      #ccda01
-
-! blue
-*.color4:       #f3f00d
-*.color12:      #fff492
-
-! magenta
-*.color5:       #ff5307
-*.color13:      #ff8e0c
-
-! cyan
-*.color6:       #862590
-*.color14:      #f3d8e9
-
-! white
-*.color7:       #788279
-*.color15:      #dfdfdf
-
-!!! ROFI !!!
-!! ! Use extended color scheme
-!rofi.color-enabled:                  true
-!! Color scheme for normal row
-!rofi.color-normal:                   argb:00000000,  #FFFFFF , argb:00000000,  argb:00000000,  #f8ae19
-!! ! Color scheme for urgent row
-!rofi.color-urgent:                   argb:90000000,  #2f343f , argb:90000000,  #2f343f , #2f343f
-!! ! Color scheme for active row
-!rofi.color-active:                   argb:99FFFFFF,  #FFFFFF , argb:99FFFFFF,  #FFFFFF , #000000
-!! ! Color scheme window
-!rofi.color-window:                   argb:CC2f343f,  #2f343f ,  #2f343f
-!! ! Separator style (none, dash, solid)
-!rofi.separator-style:                none
+!
+! Generated with :
+! XRDB2Xreources.py
+!
+*.foreground:  #d9d9d9
+*.background:  #353a44
+*.cursorColor: #d9d9d9
+!
+! Black
+*.color0:      #151515
+*.color8:      #636363
+!
+! Red
+*.color1:      #bc5653
+*.color9:      #bc5653
+!
+! Green
+*.color2:      #909d63
+*.color10:     #a0ac77
+!
+! Yellow
+*.color3:      #ebc17a
+*.color11:     #ebc17a
+!
+! Blue
+*.color4:      #6a8799
+*.color12:     #7eaac7
+!
+! Magenta
+*.color5:      #b06698
+*.color13:     #b06698
+!
+! Cyan
+*.color6:      #c9dfff
+*.color14:     #acbbd0
+!
+! White
+*.color7:      #d9d9d9
+*.color15:     #f7f7f7
+!
+! Bold, Italic, Underline
+*.colorBD:     #d9d9d9
+!*.colorIT:
+!*.colorUL:

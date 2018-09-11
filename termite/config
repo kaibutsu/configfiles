@@ -3,10 +3,10 @@
 #audible_bell = false
 #clickable_url = true
 #dynamic_title = true
-font = Monospace 10
+#font = Monospace 10
 #fullscreen = true
 #geometry = 640x480
-#icon_name = terminal
+icon_name = terminal
 #mouse_autohide = false
 #scroll_on_output = false
 #scroll_on_keystroke = true
@@ -39,38 +39,44 @@ scrollback_lines = 10000
 #scrollbar = off
 
 [colors]
-# If both of these are unset, cursor falls back to the foreground color,
-# and cursor_foreground falls back to the background color.
-#cursor = #dcdccc
-#cursor_foreground = #dcdccc
 
-#foreground = #dcdccc
-#foreground_bold = #ffffff
-#background = #3f3f3f
+# special
+foreground      = #d9d9d9
+foreground_bold = #d9d9d9
+cursor          = #d9d9d9
+background      = rgba(53, 58, 68, 0.97)
 
-# 20% background transparency (requires a compositor)
-#background = rgba(63, 63, 63, 0.8)
+# black
+color0  = #151515
+color8  = #636363
 
-# If unset, will reverse foreground and background
-highlight = #2f2f2f
+# red
+color1  = #bc5653
+color9  = #bc5653
 
-# Colors from color0 to color254 can be set
-color0 = #3f3f3f
-color1 = #705050
-color2 = #60b48a
-color3 = #dfaf8f
-color4 = #506070
-color5 = #dc8cc3
-color6 = #8cd0d3
-color7 = #dcdccc
-color8 = #709080
-color9 = #dca3a3
-color10 = #c3bf9f
-color11 = #f0dfaf
-color12 = #94bff3
-color13 = #ec93d3
-color14 = #93e0e3
-color15 = #ffffff
+# green
+color2  = #909d63
+color10 = #a0ac77
+
+# yellow
+color3  = #ebc17a
+color11 = #ebc17a
+
+# blue
+color4  = #6a8799
+color12 = #7eaac7
+
+# magenta
+color5  = #b06698
+color13 = #b06698
+
+# cyan
+color6  = #c9dfff
+color14 = #acbbd0
+
+# white
+color7  = #d9d9d9
+color15 = #f7f7f7
 
 [hints]
 #font = Monospace 12

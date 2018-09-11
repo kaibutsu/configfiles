@@ -16,12 +16,12 @@
 #
 #xfce-mcs-manager &
 
-xautolock -time 5 -locker $HOME/.config/i3/scripts/pixlock.sh &
+xautolock -time 5 -locker $HOME/.config/scripts/pixlock.sh &
+compton --config $HOME/.config/compton/openbox &
+tint2 &
 redshift &
-compton &
 nitrogen --restore &
-#synology-drive &
+synology-drive &
 lxpolkit &
 udiskie -tN &
 numlockx &
-

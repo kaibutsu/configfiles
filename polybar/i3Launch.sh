@@ -7,5 +7,5 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch bars
-MONITOR=$MAINMON polybar main &
-MONITOR=$SECMON polybar secondary
+MONITOR=$MAINMON polybar -c $HOME/.config/polybar/i3 main &
+MONITOR=$SECMON polybar -c $HOME/.config/polybar/i3 secondary

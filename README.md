@@ -7,3 +7,4 @@ To use the following files symlink them to .config/ (without the leading '.'):
     ~/.bashrc
     ~/.bash_profile
     ~/.Xresources
+    ~/.themes/

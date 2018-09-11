@@ -1,38 +1,42 @@
 # Ignore everything by default.
 /*
 
-# Git aliases, identification info
-#!.gitconfig
 # The gitignore of this repository itself (!)
 !.gitignore
 
-# .config dir (include first, then exlude again...
-# ...not sure if neccessary...)
+# config dirs/files
 !/bashrc
 !/bash_profile
-!/Xresources
-!/filelist
-!/fontconfig
-!/i3
-/i3/scripts/__pycache__
-!/nvim
+!/fontconfig/
+!/compton/
+!/git/
+/git/*
+!/git/ignore
+!gtk/
+/gtk/*
+/gtk/genus
+!/i3/
+/i3/scripts/__pycache__/
+!/nvim/
 /nvim/plugged
 /nvim/README.md
 /nvim/autoload/plug.vim.old
-!/openbox
-!/pkglists
-!/polybar
-!/ranger
+!/openbox/
+!/pkglists/
+!/polybar/
+!/ranger/
 /ranger/*
 !/ranger/rc.conf
 !/ranger/rifle.conf
 !/ranger/scope.sh
-!/compton.conf
-!/user-dirs.dirs
 !/redshift.conf
-!/termite
+!/rofi/
+!/scripts/
+!/termite/
 /termite/*
 !/termite/config
-!/git
-/git/*
-!/git/ignore
+!/themes/
+!/tint2/*
+/tint2/tint2rc.backup*
+!/user-dirs.dirs
+!/Xresources

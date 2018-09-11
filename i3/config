@@ -178,7 +178,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Initiate Screen lock
-set $LOCK_CMD "$HOME/.config/i3/scripts/pixlock.sh"
+set $LOCK_CMD "$HOME/.config/scripts/pixlock.sh"
 # screen lock - launches fancy script that pixellates a screenshot of the desktop
 # and uses it as the lockscreen
 bindsym $mod+Escape exec $LOCK_CMD
@@ -189,11 +189,11 @@ exec --no-startup-id `xautolock -time 5 -locker $LOCK_CMD`
 # automatically adjust screen temperature by day/night
 exec --no-startup-id "redshift"
 # compositing effects
-exec --no-startup-id "compton"
+exec --no-startup-id "compton --config $HOME/.config/compton/i3"
 # restore wallpaper
 exec_always --no-startup-id "nitrogen --restore"
 # start polybar(s)
-exec_always --no-startup-id "MAINMON=$main_out SECMON=$add_out $HOME/.config/polybar/launch.sh"
+exec_always --no-startup-id "MAINMON=$main_out SECMON=$add_out $HOME/.config/polybar/i3Launch.sh"
 # file synchronisation utility
 exec --no-startup-id "synology-drive"
 # policy kit
