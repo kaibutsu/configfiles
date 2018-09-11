@@ -190,6 +190,7 @@
   <chainQuitKey>C-g</chainQuitKey>
 
   <!-- Keybindings for desktop switching -->
+<!--
   <keybind key="W-Left">
     <action name="GoToDesktop"><to>left</to><wrap>no</wrap></action>
   </keybind>
@@ -214,6 +215,19 @@
   <keybind key="S-W-Down">
     <action name="SendToDesktop"><to>down</to><wrap>no</wrap></action>
   </keybind>
+-->
+	<keybind key="S-W-1">
+		<action name="SendToDesktop"><to>1</to></action>
+	</keybind>
+	<keybind key="S-W-2">
+		<action name="SendToDesktop"><to>2</to></action>
+	</keybind>
+	<keybind key="S-W-3">
+		<action name="SendToDesktop"><to>3</to></action>
+	</keybind>
+	<keybind key="S-W-4">
+		<action name="SendToDesktop"><to>4</to></action>
+	</keybind>
   <keybind key="W-1">
     <action name="GoToDesktop"><to>1</to></action>
   </keybind>
@@ -229,6 +243,8 @@
   <keybind key="W-d">
     <action name="ToggleShowDesktop"/>
   </keybind>
+	<keybind key="W-S-Left"><action name="MoveResizeTo"><monitor>1</monitor></action></keybind>
+  <keybind key="W-S-Right"><action name="MoveResizeTo"><monitor>2</monitor></action></keybind>
 
   <!-- Keybindings for windows -->
   <keybind key="A-F4">
@@ -265,9 +281,35 @@
       </finalactions>
     </action>
   </keybind>
-  <keybind key="W-Tab">
+  <keybind key="W-Right">
     <action name="NextWindow">
-      <panels>yes</panels><desktop>yes</desktop>
+      <finalactions>
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </finalactions>
+    </action>
+  </keybind>
+  <keybind key="W-Left">
+    <action name="PreviousWindow">
+      <finalactions>
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </finalactions>
+    </action>
+  </keybind>
+  <keybind key="W-Down">
+    <action name="NextWindow">
+      <finalactions>
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="Unshade"/>
+      </finalactions>
+    </action>
+  </keybind>
+  <keybind key="W-Up">
+    <action name="PreviousWindow">
       <finalactions>
         <action name="Focus"/>
         <action name="Raise"/>
@@ -308,7 +350,7 @@
       <command>pcmanfm</command>
     </action>
   </keybind>
-  <keybind key="W-Space">
+  <keybind key="W-space">
     <action name="Execute">
       <startupnotify>
         <enabled>false</enabled>
@@ -328,7 +370,7 @@
     <action name="Exit">
     </action>
   </keybind>
-  <keybind key="W-Enter">
+  <keybind key="W-Return">
       <action name="Execute">
         <startupnotify>
             <enabled>true</enabled>
@@ -336,7 +378,7 @@
         <command>termite</command>
     </action>
   </keybind>
-  <keybind key="W-S-Enter">
+  <keybind key="W-S-Return">
       <action name="Execute">
         <startupnotify>
             <enabled>true</enabled>
@@ -379,7 +421,7 @@
     </mousebind>
     <mousebind button="A-Right" action="Drag">
       <action name="Resize"/>
-    </mousebind> 
+    </mousebind>
 
     <mousebind button="A-Middle" action="Press">
       <action name="Lower"/>
@@ -631,7 +673,7 @@
     <!-- Menus -->
     <mousebind button="Middle" action="Press">
       <action name="ShowMenu"><menu>client-list-combined-menu</menu></action>
-    </mousebind> 
+    </mousebind>
     <mousebind button="Right" action="Press">
       <action name="ShowMenu"><menu>root-menu</menu></action>
     </mousebind>
@@ -709,7 +751,7 @@
   # order that they appear in this list
 
 
-    # each rule element can be left out or set to 'default' to specify to not 
+    # each rule element can be left out or set to 'default' to specify to not
     # change that attribute of the window
 
     <decor>yes</decor>
