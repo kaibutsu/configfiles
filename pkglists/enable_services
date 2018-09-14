@@ -1,0 +1,1 @@
+systemctl enable org.cups.cupsd avahi-daemon lightdm systemd-timesyncd udisks2
