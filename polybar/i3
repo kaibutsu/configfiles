@@ -140,7 +140,7 @@ interval = 30
 
 mount-0 = /
 #mount-1 = /home
-label-mounted = " %mountpoint%: %percentage_used%% "
+label-mounted = " %mountpoint% %percentage_used% % "
 label-unmounted = " %mountpoint% not mounted "
 label-unmounted-foreground = ${colors.alert}
 format-mounted-underline = ${colors.accent2}
@@ -159,7 +159,8 @@ interval = 2
 format-prefix = "  "
 #format-prefix-foreground = ${colors.balanced}
 format-underline = ${colors.accent4}
-label = "%percentage-core1:2%% |%percentage-core2:2%% |%percentage-core3:2%% |%percentage-core4:2%% "
+#label = %percentage:2% %
+label = "%percentage-core1:2% % |%percentage-core2:2% % |%percentage-core3:2% % |%percentage-core4:2% % |%percentage-core5:2% % |%percentage-core6:2% %"
 
 [module/eth]
 type = internal/network
