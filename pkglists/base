@@ -8,6 +8,7 @@ cmus
 cups
 cups-pk-helper
 efibootmgr
+exfat-utils
 git
 grub
 hplip
