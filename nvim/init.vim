@@ -78,15 +78,6 @@ call plug#end()
     set ttimeoutlen=100
     " Set standard encoding
     set encoding=utf-8
-    " Press 'vv' for linewise selection
-    nnoremap vv V
-    " Better use of j and k
-    inoremap jk <ESC>
-    inoremap kj <ESC>
-    nnoremap j gj
-    nnoremap k gk
-    " Map the leader key to ,
-    let mapleader=","
     " Mark 'psychological' break column
     set colorcolumn=80
     " Fix characters in vterm
@@ -191,6 +182,16 @@ call plug#end()
 " }
 
 " Keybindings {
+" 
+    " Press 'vv' for linewise selection
+    nnoremap vv V
+    " Better use of j and k
+    inoremap jk <ESC>
+    inoremap kj <ESC>
+    nnoremap j gj
+    nnoremap k gk
+    " Map the leader key to ,
+    let mapleader=","
     " Save file
     nnoremap <Leader>w :w<CR>
 
