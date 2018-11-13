@@ -82,6 +82,9 @@ call plug#end()
     set colorcolumn=80
     " Fix characters in vterm
     ":set guicursor=
+    " In insert mode backspace won't delete over line breaks, or
+    " automatically-inserted indentation, let's change that
+    set backspace=indent,eol,start
 " }
 
 " Search {
@@ -202,16 +205,22 @@ call plug#end()
     nnoremap <C-l> <C-w>l
 
     " Copy and paste from system clipboard (Might require xsel/xclip install)
-"    vmap <Leader>y "+y
-"    vmap <Leader>d "+d
-"    nmap <Leader>p "+p
-"    nmap <Leader>P "+P
-"    vmap <Leader>p "+p
-"    vmap <Leader>P "+P
+    vmap <Leader>y "+y
+    vmap <Leader>d "+d
+    nmap <Leader>p "+p
+    nmap <Leader>P "+P
+    vmap <Leader>p "+p
+    vmap <Leader>P "+P
 
     " Move between buffers
     nmap <Leader>l :bnext<CR>
     nmap <Leader>h :bprevious<CR>
+
+    " allow Tab and Shift+Tab to
+    " tab  selection in visual mode
+    vmap <Tab> >gv
+    vmap <S-Tab> <gv
+
 " }
 
 " Plugin Settings {
