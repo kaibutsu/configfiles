@@ -33,8 +33,6 @@
 !/rofi/
 !/scripts/
 !/termite/
-/termite/*
-!/termite/config
 !/themes/
 !/tint2/*
 /tint2/tint2rc.backup*

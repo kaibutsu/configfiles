@@ -31,3 +31,6 @@ alias df="df -h"
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+
+## source /etc/profile.d/vte.sh to enable opening terminal in current folder
+source /etc/profile.d/vte.sh
