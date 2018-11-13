@@ -195,6 +195,12 @@ call plug#end()
     " Save file
     nnoremap <Leader>w :w<CR>
 
+    " Split movement
+    nnoremap <C-h> <C-w>h
+    nnoremap <C-j> <C-w>j
+    nnoremap <C-k> <C-w>k
+    nnoremap <C-l> <C-w>l
+
     " Copy and paste from system clipboard (Might require xsel/xclip install)
 "    vmap <Leader>y "+y
 "    vmap <Leader>d "+d
