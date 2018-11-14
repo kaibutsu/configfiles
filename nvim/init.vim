@@ -3,6 +3,11 @@ call plug#begin('~/.config/nvim/plugged')
 " Plugins {
     " Code completion
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'wokalski/autocomplete-flow'
+    Plug 'flowtype/vim-flow'
+    " For func argument completion
+    Plug 'Shougo/neosnippet'
+    Plug 'Shougo/neosnippet-snippets'
 
     " Auto comment
     Plug 'tomtom/tcomment_vim'
@@ -23,7 +28,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'tpope/vim-surround'
 
     " Easymotion
-    Plug 'easymotion/vim-easymotion'
+"    Plug 'easymotion/vim-easymotion'
 
     " airline
     Plug 'vim-airline/vim-airline'
@@ -127,8 +132,6 @@ call plug#end()
     endif
     set list                " Show problematic characters.
 
-    " Enable js-beautify
-    nnoremap <leader>ff :%!js-beautify --editorconfig -q -f -<CR>
 " }
 
 " Configuration {
@@ -250,37 +253,42 @@ call plug#end()
         nnoremap <space>/ :Ag
     " }
 
-    " Deoplete {
+    " Deoplete/Neosnippet {
         let g:deoplete#enable_at_startup = 1
+        let g:neosnippet#enable_completed_snippet = 1
     " }
 
     " NERDTree {
         nmap <silent> <F2> :NERDTreeToggle <CR>
     " }
 
-	" Airline {
+    " Airline {
         let g:airline_powerline_fonts = 1
 "        let g:airline_theme = 'spring_night'
     " }
 
-	" Neoformat {
-		noremap <silent> <leader>f :Neoformat<CR>
-	" }
+    " Neoformat {
+        noremap <silent> <leader>f :Neoformat<CR>
+    " }
 
-	" TComment {
-		vnoremap <silent> <leader># :TComment<cr>
-		nnoremap <silent> <leader><leader># :TComment<cr>
-	" }
+    " TComment {
+        vnoremap <silent> <leader># :TComment<cr>
+        nnoremap <silent> <leader><leader># :TComment<cr>
+    " }
 
-	" NeoMake {
-		"Execute when writing a buffer
-		call neomake#configure#automake('w')
-	" }
+    " NeoMake {
+        "Execute when writing a buffer
+        call neomake#configure#automake('w')
+    " }
 
     " neotex {
         " 1: Enable by :NeoTexOn, 2: always on
         "let g:neotex_enabled = 1
         "let g:neotex_latexdiff = 1
+    " }
+
+    " js-beautify {
+        nnoremap <leader>ff :%!js-beautify --editorconfig -q -f -<CR>
     " }
 " }
 
