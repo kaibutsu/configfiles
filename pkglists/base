@@ -24,7 +24,6 @@ pulseaudio-alsa
 pulsemixer
 python-neovim
 python-pip
-python2-neovim
 python2-pip
 termite
 trash-cli
