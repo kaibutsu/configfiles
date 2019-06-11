@@ -9,7 +9,8 @@ hunspell-de
 hunspell-en_GB
 icedtea-web
 java-openjfx
-jdk8-openjdk
+jre10-openjdk
+jdk10-openjdk
 libreoffice-fresh-de
 meld
 mps-youtube

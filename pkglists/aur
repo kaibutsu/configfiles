@@ -1,4 +1,5 @@
-cower
+mongodb-bin
+pakaur
 polybar-git
     #needs
         #sudo pacman -S jsoncpp
