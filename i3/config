@@ -10,8 +10,8 @@ set $mod Mod4
 font pango: Fira Code Bold 9
 
 # Monitor definitions
-set $main_out HDMI-0
-set $add_out DP-1
+set $main_out DP-1
+set $add_out HDMI-0
 
 # Color definitions
 # Load colors from xresources
@@ -136,8 +136,8 @@ bindsym $mod+Shift+bracketright move workspace to output right
 # Set properties for specific clients
 for_window [class="Thunderbird" instance="Calendar"] floating enable
 for_window [class="Thunderbird" instance="Msgcompose"] floating enable
-for_window [class="Thunderbird"] border 5pixel
-for_window [class="Firefox"] border 5pixel
+for_window [class="Thunderbird"] border pixel 5
+for_window [class="Firefox"] border pixel 1
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
