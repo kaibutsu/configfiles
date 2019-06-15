@@ -134,9 +134,9 @@ bindsym $mod+Shift+bracketleft move workspace to output left
 bindsym $mod+Shift+bracketright move workspace to output right
 
 # Set properties for specific clients
-for_window [class="Thunderbird" instance="Calendar"] floating enable
-for_window [class="Thunderbird" instance="Msgcompose"] floating enable
-for_window [class="Thunderbird"] border pixel 5
+#for_window [class="Thunderbird" instance="Calendar"] floating enable, border normal 1
+#for_window [class="Thunderbird" instance="Msgcompose"] floating enable, border normal 1
+#for_window [class="Thunderbird"] border pixel 1
 for_window [class="Firefox"] border pixel 1
 
 # reload the configuration file
