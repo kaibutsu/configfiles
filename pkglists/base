@@ -16,6 +16,7 @@ links
 neovim
 nss-mdns
 ntfs-3g
+openssh
 os-prober
 p7zip
 powerline-fonts
@@ -30,3 +31,4 @@ trash-cli
 unarj
 unrar
 wget
+
