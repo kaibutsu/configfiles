@@ -1,1 +1,1 @@
-systemctl enable org.cups.cupsd avahi-daemon lightdm systemd-timesyncd udisks2 systemd-networkd.service systemd-resolved.service
+systemctl enable org.cups.cupsd avahi-daemon lightdm systemd-timesyncd udisks2 systemd-networkd.service systemd-resolved.service networkmanager.service
