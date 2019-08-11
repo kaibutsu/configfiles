@@ -9,6 +9,7 @@ cups
 cups-pk-helper
 efibootmgr
 exfat-utils
+gcc-fortran
 git
 grub
 hplip
