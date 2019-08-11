@@ -23,13 +23,9 @@
 /nvim/autoload/plug.vim.old
 !/pkglists/
 !/polybar/
-!/ranger/
-/ranger/*
-!/ranger/rc.conf
-!/ranger/rifle.conf
-!/ranger/scope.sh
 !/redshift.conf
 !/rofi/
+!/Rprofile
 !/scripts/
 !/termite/
 !/user-dirs.dirs
